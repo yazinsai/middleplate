@@ -5,40 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
     <!-- Primary Meta Tags -->
     <title><%= current_page.data.title %></title>
-    <meta name="description" content="Amal's an AI bot that helps you track your spending, effortlessly! Live in the UAE 🇦🇪">
-
-    <%# <!-- facebook open graph tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://askamal.com/" />
-    <meta property="og:title" content="Amal | Where's your money going?" />
-    <meta property="og:description" content="Amal's an AI bot that helps you track your spending, effortlessly! Live in the UAE 🇦🇪" />
-    <meta property="og:image" content="https://askamal.com/images/amal-preview.png" />
-    
-    <!-- twitter card tags additive with the og: tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" value="askamal.com" />
-    <meta name="twitter:title" value="Amal | Where's your money going?" />
-    <meta name="twitter:description" value="Amal's an AI bot that helps you track your spending, effortlessly! Live in the UAE 🇦🇪" />
-    <meta name="twitter:image" content="https://askamal.com/images/amal-preview.png" />
-    <meta name="twitter:url" value="https://askamal.com/" />
-    <meta name="twitter:label1" value="Platforms supported" />
-    <meta name="twitter:data1" value="WhatsApp, FB Messenger" />
-    <meta name="twitter:label2" value="Countries available" />
-    <meta name="twitter:data2" value="UAE" /> %>
+    <meta name="description" content="<%= current_page.data.description %>">
 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <input type="hidden" id="amplitude-key" value="<%= ENV['AMPLITUDE_API_KEY'] %>">
     <%= yield %>
   </body>
 </html>

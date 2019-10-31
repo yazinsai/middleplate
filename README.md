@@ -7,6 +7,7 @@ Ok, close all the other windows you have open in your search for a great Middlem
 Middleplate gives you all the sane defaults you need for Middleman:
 
 - Support for webpack (so you can `require('bootstrap')` to your ❤'s content)
+- Support for autoreload -- see your changes on save! ✨
 - Support for `slim` (trust me, you'll thank me later) 
 - Support for `.env` files
 
