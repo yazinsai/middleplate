@@ -1,0 +1,20 @@
+{
+  "name": "appname",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "develop": "webpack --config ./webpack.config.js --watch -d --progress --colors",
+    "build": "webpack --config ./webpack.config.js --bail -p"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.6.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {}
+}

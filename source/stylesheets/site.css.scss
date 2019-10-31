@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css?family=Nunito|PT+Sans&display=swap";
+
+// $gray-9: #F1F6F9;
+// $gray-8: #DFEAF1;
+// $gray-7: #BED2DF;
+// $gray-6: #95AFC1;
+// $gray-5: #7292A7;
+// $gray-4: #52758E;
+// $gray-3: #41637C;
+// $gray-2: #29506A;
+// $gray-1: #223F53;
+
+// $blue-9: #F3F8FC;
+// $blue-8: #D4E7FC;
+// $blue-7: #9AC2EA;
+// $blue-6: #72A7E4;
+// $blue-5: #458FD3;
+// $blue-4: #3571BB;
+// $blue-3: #1F5AA3;
+// $blue-2: #144890;
+// $blue-1: #0C346A;
+
+$font-heading: 'Nunito', sans-serif;
+$font-body: 'PT Sans', sans-serif;
+
+$size-xsmall: 16px;
+$size-small: 18px;
+$size-normal: 22px;
+$size-large: 26px;
+$size-h2: 32px;
+$size-h1: 42px;
+
+$mobile: "(max-width: 768px)";
+$desktop: "(min-width: 768px)";
+
+// Helpers
+@media #{$desktop} {
+    .m { // mobile only
+        display: none !important;
+    }
+}
+@media #{$mobile} {
+    .d { // desktop only
+        display: none !important;
+    }
+}
+
+// Our grid (mobile first)
+.container {
+    display: block;
+    margin: 0 auto;
+
+    min-width: 320px;
+    max-width: 1200px;
+}
+  
+.container > .col {
+    flex: 1;
+}
+
+@media #{$desktop} {
+    .container {
+        display: flex;
+    }
+}
+
+html, body {
+    font-family: $font-body;
+    font-size: $size-normal;
+    margin: 0;
+    padding: 0;
+}
